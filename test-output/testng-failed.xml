@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amazon Test Suite]">
+  <test thread-count="5" name="Login Tests(failed)">
+    <classes>
+      <class name="com.amazon.automation.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="invalidPassword"/>
+          <include name="invalidEmail"/>
+          <include name="validLogin"/>
+          <include name="emptyEmail"/>
+        </methods>
+      </class> <!-- com.amazon.automation.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login Tests(failed) -->
+  <test thread-count="5" name="Search Tests(failed)">
+    <classes>
+      <class name="com.amazon.automation.testcases.SearchTest">
+        <methods>
+          <include name="searchResultsCount"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="emptySearch"/>
+          <include name="invalidSearch"/>
+          <include name="validSearch"/>
+        </methods>
+      </class> <!-- com.amazon.automation.testcases.SearchTest -->
+    </classes>
+  </test> <!-- Search Tests(failed) -->
+  <test thread-count="5" name="Cart Tests(failed)">
+    <classes>
+      <class name="com.amazon.automation.testcases.CartTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="navigateToCart"/>
+          <include name="setUp"/>
+          <include name="addProductToCart"/>
+          <include name="cartPageTitle"/>
+        </methods>
+      </class> <!-- com.amazon.automation.testcases.CartTest -->
+    </classes>
+  </test> <!-- Cart Tests(failed) -->
+</suite> <!-- Failed suite [Amazon Test Suite] -->
